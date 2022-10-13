@@ -14,7 +14,7 @@ public class Main {
 
     public static void main(String[] args) {
         if (args.length == MIN_POSSIBLE_ARGUMENTS && ARGUMENT_PATTERN.equals(args[0])) {
-            search(".", args[1]);
+            search(System.getProperty("user.dir"), args[1]);
             return;
         }
         if (args.length == MAX_POSSIBLE_ARGUMENTS && ARGUMENT_PATTERN.equals(args[1])) {
